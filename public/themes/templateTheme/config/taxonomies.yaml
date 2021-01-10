@@ -1,0 +1,41 @@
+taxonomies:
+  fake-taxonomie:
+    post-type: 'fake-post'
+    hierarchical: false
+    show_ui: true
+    show_in_rest: true
+    show_admin_column: true
+    query_var: true
+    rewrite:
+      slug: "fakeTaxonomie"
+    labels:
+      name: "Fake taxonomies"
+      singular_name: "Fake taxonomie"
+      search_items: "Rechercher une fake taxonomie"
+      all_items: "Toutes les fake taxonomies"
+      edit_item: "Editer"
+      update_item: "Mettre à jour"
+      add_new_item: "Ajouter"
+      new_item_name: "Nouveau noù"
+      separate_items_with_commas: "Séparer par une virgule"
+      menu_name: "Nom menu"
+  fake-taxonomie2:
+    post-type: 'fake-post2'
+    hierarchical: false
+    show_ui: true
+    show_in_rest: true
+    show_admin_column: true
+    query_var: true
+    rewrite:
+      slug: "fakeTaxonomie"
+    labels:
+      name: "Fake taxonomies"
+      singular_name: "Fake taxonomie"
+      search_items: "Rechercher une fake taxonomie"
+      all_items: "Toutes les fake taxonomies"
+      edit_item: "Editer"
+      update_item: "Mettre à jour"
+      add_new_item: "Ajouter"
+      new_item_name: "Nouveau noù"
+      separate_items_with_commas: "Séparer par une virgule"
+      menu_name: "Nom menu"

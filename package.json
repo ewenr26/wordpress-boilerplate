@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+  
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "browserslist": [
+    ">0.25%",
+    "not ie 11",
+    "not op_mini all"
+  ]
+}

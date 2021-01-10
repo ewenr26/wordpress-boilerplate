@@ -1,0 +1,63 @@
+post-types:
+  fake-post:
+    description: "This is the description of a fake post"
+    supports:
+      - title
+      - editor
+      - excerpt
+      - author
+      - thumbnail
+      - comments
+      - revisions
+      - custom-fields
+    show_in_rest: true
+    hierarchical: false
+    public: true
+    has_archive: true
+    menu_icon: "dashicons-video-alt2"
+    rewrite:
+      slug: "fAkE-pOsT"
+    labels:
+      name: "Fake posts"
+      singular_name: "Fake post"
+      menu_name: "Fake post"
+      all_items: "Tous les fake posts"
+      view_item: "Voir les fake posts"
+      add_new_item: "Ajouter un nouveau fake post"
+      add_new: "Ajouter"
+      edit_item: "Editer le fake post"
+      update_item: "Mettre a jour le fake post"
+      search_items: "Rechercher le fake post"
+      not_found: "Non trouvé"
+      not_found_in_trash: "Non trouvé dans la corbeille"
+  fake-post2:
+    description: "This is the description of a fake post2"
+    supports:
+      - title
+      - editor
+      - excerpt
+      - author
+      - thumbnail
+      - comments
+      - revisions
+      - custom-fields
+    show_in_rest: true
+    hierarchical: false
+    public: true
+    has_archive: true
+    menu_icon: "dashicons-video-alt2"
+    rewrite:
+      slug: "fAkE-pOsT2"
+    labels:
+      name: "Fake post2s"
+      singular_name: "Fake post2"
+      menu_name: "Fake post2"
+      all_items: "Tous les fake post2s"
+      view_item: "Voir les fake post2s"
+      add_new_item: "Ajouter un nouveau fake post2"
+      add_new: "Ajouter"
+      edit_item: "Editer le fake post2"
+      update_item: "Mettre a jour le fake post2"
+      search_items: "Rechercher le fake post2"
+      not_found: "Non trouvé"
+      not_found_in_trash: "Non trouvé dans la corbeille"

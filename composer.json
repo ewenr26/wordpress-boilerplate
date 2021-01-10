@@ -1,0 +1,60 @@
+{
+    "name": "wordplate/wordplate",
+    "description": "A modern WordPress stack to make PHP developers happier",
+    "keywords": [
+        "wordplate",
+        "wordpress",
+        "boilerplate"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "advanced-custom-fields/advanced-custom-fields-pro": "^5.9",
+        "symfony/finder": "^5.2",
+        "symfony/yaml": "^5.2",
+        "timber/timber": "^1.18",
+        "wordplate/acf": "^9.1",
+        "wordplate/framework": "^9.3"
+    },
+    "require-dev": {
+        "wp-cli/wp-cli-bundle": "^2.4"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "installer-paths": {
+            "public/mu-plugins/{$name}": [
+                "type:wordpress-muplugin"
+            ],
+            "public/plugins/{$name}": [
+                "type:wordpress-plugin"
+            ],
+            "public/themes/{$name}": [
+                "type:wordpress-theme"
+            ]
+        },
+        "wordpress-install-dir": "public/wordpress"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        },
+        {
+            "type": "composer",
+            "url": "https://pivvenit.github.io/acf-composer-bridge/composer/v3/wordpress-plugin/"
+        }
+    ],
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    }
+}
